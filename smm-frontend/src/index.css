@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Druk Wide Trial';
+    src: url('./assets/fonts/DrukWideTrial-Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Druk Wide Trial';
+    src: url('./assets/fonts/DrukWideTrial-Medium.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Druk Wide Trial';
+    src: url('./assets/fonts/DrukWideTrial-Bold.ttf') format('opentype');
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .animated-bg {
+    background: linear-gradient(135deg, #6B8AFF, #B8A0FF, #FFB3C6, #6B8AFF);
+    background-size: 400% 400%;
+    animation: gradientShift 8s ease infinite;
+  }
+  @keyframes waveShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .animated-bg {
+    background: linear-gradient(
+      135deg,
+      #3D5AFE,
+      #7B61FF,
+      #C9A0FF,
+      #FFB3C6,
+      #7B61FF,
+      #3D5AFE
+    );
+    background-size: 400% 400%;
+    animation: waveShift 12s ease infinite;
+    position: relative;
+    overflow: hidden;
+  }
+  @keyframes expandFromButton {
+    0% {
+      opacity: 0;
+      transform: scaleX(0.1) scaleY(0.1) translateY(20px);
+      transform-origin: center bottom;
+    }
+    60% {
+      transform: scaleX(1.05) scaleY(1.05) translateY(-5px);
+      transform-origin: center bottom;
+      opacity: 1;
+    }
+    100% {
+      transform: scaleX(1) scaleY(1) translateY(0px);
+      transform-origin: center bottom;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes backdropFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .animated-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.08'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  
+  .animated-bg::before {
+    content: '';
+    position: absolute;
+    inset: -50%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255,180,200,0.4) 0%,
+      rgba(100,120,255,0.6) 40%,
+      rgba(60,80,220,0.8) 70%,
+      transparent 100%
+    );
+    animation: waveShift 8s ease-in-out infinite alternate;
+    pointer-events: none;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    margin: 0;
+  }
+  .btn-primary {
+    transition: filter 0.2s ease, transform 0.1s ease;
+  }
+  
+  .btn-primary:hover {
+    filter: brightness(0.8);
+  }
+  
+  .btn-primary:active {
+    transform: scale(0.98);
+  }
+
+  .spotify-tracklist::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .spotify-tracklist {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
