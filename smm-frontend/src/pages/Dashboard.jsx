@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar'
 import { FaInstagram, FaGithub, FaSpotify, FaSteam, FaStepBackward, FaPlay, FaStepForward } from 'react-icons/fa'
 import { ThemeContext } from '../App'
 import { getUsername } from '../utils/auth'
+import SetupGuide, { SETUP_KEY } from '../components/SetupGuide'
 
 const activity = [
   { icon: FaInstagram, color: '#E1306C', text: 'Novi follower: @marko.designs', time: '2 min ago' },
@@ -16,6 +17,7 @@ function Dashboard() {
   const isDark = theme === 'dark'
   const username = getUsername()
 
+  const [showSetup, setShowSetup] = useState(() => !localStorage.getItem(SETUP_KEY))
   const [igProfile, setIgProfile] = useState(null)
   const [igMedia, setIgMedia] = useState([])
 
@@ -63,6 +65,7 @@ function Dashboard() {
 
   return (
     <div style={{ display: 'flex', height: '100vh', background: t.bg, overflow: 'hidden', position: 'relative' }}>
+      {showSetup && <SetupGuide onComplete={() => setShowSetup(false)} />}
       <Sidebar />
 
       <div style={{ flex: 1, overflowY: 'auto', overflowX: 'hidden', padding: '20px 60px', width: 0, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '36px' }}>

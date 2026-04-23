@@ -8,6 +8,7 @@ import Connected from './pages/Connected'
 import Notifications from './pages/Notifications'
 import Profile from './pages/Profile'
 import Settings from './pages/Settings'
+import Wireframe from './pages/Wireframe'
 import SpotifyPlayer from './components/SpotifyPlayer'
 
 export const ThemeContext = createContext('dark')
@@ -34,6 +35,7 @@ function App() {
           <Route path="/notifications" element={<ProtectedRoute><Notifications /></ProtectedRoute>} />
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
           <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
+          <Route path="/wireframe" element={<Wireframe />} />
         </Routes>
         <SpotifyPlayer />
       </BrowserRouter>
