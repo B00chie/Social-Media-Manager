@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" width="1200" height="820" font-family="Inter, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="1200" height="820" fill="#F9F9F9"/>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- SIDEBAR                                -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="0" y="0" width="200" height="820" fill="#E8E8E8" stroke="#BDBDBD" stroke-width="1"/>
+
+  <!-- Logo -->
+  <rect x="16" y="16" width="168" height="52" rx="8" fill="#D0D0D0" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="100" y="47" text-anchor="middle" font-size="13" font-weight="700" fill="#555">LOGO / SMM</text>
+
+  <!-- Nav items -->
+  <!-- Active item -->
+  <rect x="10" y="94" width="180" height="38" rx="6" fill="#C8C8C8" stroke="#AAAAAA" stroke-width="1"/>
+  <rect x="22" y="107" width="16" height="14" rx="2" fill="#999"/>
+  <text x="46" y="118" font-size="13" font-weight="600" fill="#333">Dashboard</text>
+  <rect x="178" y="94" width="3" height="38" rx="1" fill="#555"/>
+
+  <!-- Nav item 2 -->
+  <rect x="10" y="140" width="180" height="38" rx="6" fill="none"/>
+  <rect x="22" y="153" width="16" height="14" rx="2" fill="#BBB"/>
+  <text x="46" y="164" font-size="13" fill="#777">Feed</text>
+
+  <!-- Nav item 3 -->
+  <rect x="10" y="186" width="180" height="38" rx="6" fill="none"/>
+  <rect x="22" y="199" width="16" height="14" rx="2" fill="#BBB"/>
+  <text x="46" y="210" font-size="13" fill="#777">Connected</text>
+
+  <!-- Nav item 4 -->
+  <rect x="10" y="232" width="180" height="38" rx="6" fill="none"/>
+  <rect x="22" y="245" width="16" height="14" rx="2" fill="#BBB"/>
+  <text x="46" y="256" font-size="13" fill="#777">Notifications</text>
+
+  <!-- Divider -->
+  <line x1="16" y1="690" x2="184" y2="690" stroke="#C8C8C8" stroke-width="1"/>
+
+  <!-- Export stats -->
+  <rect x="10" y="700" width="180" height="32" rx="6" fill="#D8D8D8" stroke="#C0C0C0" stroke-width="1"/>
+  <text x="100" y="720" text-anchor="middle" font-size="11" fill="#666">Export your stats  ⓘ</text>
+
+  <!-- Settings icons row -->
+  <circle cx="32" cy="754" r="12" fill="#D0D0D0" stroke="#BDBDBD" stroke-width="1"/>
+  <circle cx="62" cy="754" r="12" fill="#D0D0D0" stroke="#BDBDBD" stroke-width="1"/>
+
+  <!-- User profile row -->
+  <circle cx="28" cy="796" r="14" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="28" y="800" text-anchor="middle" font-size="9" fill="#555">AV</text>
+  <text x="50" y="793" font-size="12" font-weight="600" fill="#444">Uroš Kostić</text>
+  <text x="50" y="807" font-size="10" fill="#888">@username</text>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- MAIN CONTENT AREA                      -->
+  <!-- ═══════════════════════════════════════ -->
+  <rect x="200" y="0" width="1000" height="820" fill="#F5F5F5"/>
+
+  <!-- ── Header ── -->
+  <!-- Page title -->
+  <rect x="240" y="28" width="340" height="36" rx="6" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="410" y="51" text-anchor="middle" font-size="13" font-weight="700" fill="#444">Dobrodošao nazad, [username] 👋</text>
+
+  <!-- Date -->
+  <rect x="870" y="28" width="290" height="36" rx="6" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="1015" y="51" text-anchor="middle" font-size="13" fill="#666">Sreda, 11. Mart 2026.</text>
+
+  <!-- ── Account Cards 2×2 grid ── -->
+  <!-- Row 1 -->
+  <rect x="240" y="90" width="450" height="68" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <!-- Icon placeholder -->
+  <circle cx="274" cy="124" r="18" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="274" y="128" text-anchor="middle" font-size="9" fill="#777">IGR</text>
+  <!-- Text -->
+  <rect x="302" y="110" width="90" height="12" rx="3" fill="#C8C8C8"/>
+  <rect x="302" y="128" width="70" height="10" rx="3" fill="#D4D4D4"/>
+  <!-- Status -->
+  <rect x="600" y="115" width="72" height="20" rx="10" fill="#C8E6C9" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="636" y="129" text-anchor="middle" font-size="10" fill="#388E3C" font-weight="600">Connected</text>
+
+  <rect x="710" y="90" width="450" height="68" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="744" cy="124" r="18" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="744" y="128" text-anchor="middle" font-size="9" fill="#777">GIT</text>
+  <rect x="772" y="110" width="80" height="12" rx="3" fill="#C8C8C8"/>
+  <rect x="772" y="128" width="60" height="10" rx="3" fill="#D4D4D4"/>
+  <rect x="1072" y="115" width="72" height="20" rx="10" fill="#C8E6C9" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="1108" y="129" text-anchor="middle" font-size="10" fill="#388E3C" font-weight="600">Connected</text>
+
+  <!-- Row 2 -->
+  <rect x="240" y="168" width="450" height="68" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="274" cy="202" r="18" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="274" y="206" text-anchor="middle" font-size="9" fill="#777">SPT</text>
+  <rect x="302" y="188" width="75" height="12" rx="3" fill="#C8C8C8"/>
+  <rect x="302" y="206" width="55" height="10" rx="3" fill="#D4D4D4"/>
+  <rect x="600" y="193" width="72" height="20" rx="10" fill="#C8E6C9" stroke="#A5D6A7" stroke-width="1"/>
+  <text x="636" y="207" text-anchor="middle" font-size="10" fill="#388E3C" font-weight="600">Connected</text>
+
+  <rect x="710" y="168" width="450" height="68" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="744" cy="202" r="18" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="744" y="206" text-anchor="middle" font-size="9" fill="#777">STM</text>
+  <rect x="772" y="188" width="65" height="12" rx="3" fill="#C8C8C8"/>
+  <rect x="772" y="206" width="50" height="10" rx="3" fill="#D4D4D4"/>
+  <rect x="1048" y="193" width="96" height="20" rx="10" fill="#EEEEEE" stroke="#D0D0D0" stroke-width="1"/>
+  <text x="1096" y="207" text-anchor="middle" font-size="10" fill="#999">Disconnected</text>
+
+  <!-- ── Stats row ── -->
+  <rect x="240" y="256" width="296" height="60" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="288" y="291" font-size="12" fill="#666">Povezanih mreža</text>
+  <text x="516" y="291" text-anchor="end" font-size="18" font-weight="700" fill="#444">4</text>
+
+  <rect x="546" y="256" width="296" height="60" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="590" y="291" font-size="12" fill="#666">Notifikacije</text>
+  <text x="822" y="291" text-anchor="end" font-size="18" font-weight="700" fill="#444">12</text>
+
+  <rect x="852" y="256" width="308" height="60" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="894" y="291" font-size="12" fill="#666">Aktivni nalozi</text>
+  <text x="1140" y="291" text-anchor="end" font-size="18" font-weight="700" fill="#444">3</text>
+
+  <!-- ── Recent Activity ── -->
+  <text x="240" y="354" font-size="16" font-weight="700" fill="#444">Recent activity</text>
+
+  <!-- Activity items -->
+  <rect x="240" y="368" width="920" height="52" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="270" cy="394" r="16" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="270" y="398" text-anchor="middle" font-size="8" fill="#777">IGR</text>
+  <rect x="298" y="386" width="260" height="12" rx="3" fill="#C8C8C8"/>
+  <rect x="1080" y="386" width="72" height="12" rx="3" fill="#D0D0D0"/>
+
+  <rect x="240" y="430" width="920" height="52" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="270" cy="456" r="16" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="270" y="460" text-anchor="middle" font-size="8" fill="#777">GIT</text>
+  <rect x="298" y="448" width="220" height="12" rx="3" fill="#C8C8C8"/>
+  <rect x="1080" y="448" width="72" height="12" rx="3" fill="#D0D0D0"/>
+
+  <rect x="240" y="492" width="920" height="52" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="270" cy="518" r="16" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="270" y="522" text-anchor="middle" font-size="8" fill="#777">IGR</text>
+  <rect x="298" y="510" width="240" height="12" rx="3" fill="#C8C8C8"/>
+  <rect x="1080" y="510" width="72" height="12" rx="3" fill="#D0D0D0"/>
+
+  <rect x="240" y="554" width="920" height="52" rx="10" fill="#E0E0E0" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="270" cy="580" r="16" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="270" y="584" text-anchor="middle" font-size="8" fill="#777">GIT</text>
+  <rect x="298" y="572" width="280" height="12" rx="3" fill="#C8C8C8"/>
+  <rect x="1080" y="572" width="72" height="12" rx="3" fill="#D0D0D0"/>
+
+  <!-- ── Spotify Player (bottom right) ── -->
+  <rect x="620" y="748" width="560" height="58" rx="12" fill="#DCDCDC" stroke="#BDBDBD" stroke-width="1"/>
+  <!-- Progress bar -->
+  <rect x="636" y="754" width="528" height="6" rx="3" fill="#C0C0C0"/>
+  <rect x="636" y="754" width="200" height="6" rx="3" fill="#999"/>
+  <circle cx="836" cy="757" r="5" fill="#777"/>
+  <!-- Song info -->
+  <circle cx="658" cy="785" r="12" fill="#C0C0C0" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="658" y="789" text-anchor="middle" font-size="7" fill="#777">SPT</text>
+  <rect x="678" y="777" width="110" height="10" rx="3" fill="#C8C8C8"/>
+  <rect x="678" y="791" width="80" height="8" rx="3" fill="#D4D4D4"/>
+  <!-- Controls -->
+  <text x="1090" y="789" font-size="18" fill="#888">⏮  ▶  ⏭</text>
+
+  <!-- ══════════════════════════════════════════════════ -->
+  <!-- ANNOTATION LABELS                                  -->
+  <!-- ══════════════════════════════════════════════════ -->
+
+  <!-- Sidebar label -->
+  <rect x="2" y="280" width="10" height="60" rx="3" fill="#888"/>
+  <text transform="rotate(-90, 8, 320)" x="8" y="320" text-anchor="middle" font-size="10" fill="#888">SIDEBAR NAV</text>
+
+  <!-- Cards label -->
+  <line x1="700" y1="82" x2="700" y2="78" stroke="#AAAAAA" stroke-width="1" stroke-dasharray="3,2"/>
+  <text x="580" y="76" text-anchor="middle" font-size="10" fill="#888" font-style="italic">2×2 Account Cards Grid</text>
+
+  <!-- Stats label -->
+  <text x="700" y="252" text-anchor="middle" font-size="10" fill="#888" font-style="italic">Stats Row — 3 cards</text>
+
+  <!-- Activity label -->
+  <text x="1060" y="354" font-size="10" fill="#888" font-style="italic">4 activity items</text>
+
+  <!-- Player label -->
+  <text x="900" y="744" text-anchor="middle" font-size="10" fill="#888" font-style="italic">Spotify Player (fixed, bottom-right)</text>
+
+  <!-- Border around entire frame -->
+  <rect x="0.5" y="0.5" width="1199" height="819" fill="none" stroke="#BDBDBD" stroke-width="1"/>
+
+  <!-- Sidebar/Content divider -->
+  <line x1="200" y1="0" x2="200" y2="820" stroke="#BDBDBD" stroke-width="1.5"/>
+
+</svg>

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="900" height="580" font-family="Inter, Arial, sans-serif">
+
+  <rect width="900" height="580" fill="#F9F9F9"/>
+
+  <!-- Title -->
+  <text x="450" y="30" text-anchor="middle" font-size="14" font-weight="700" fill="#333">Social Media Manager — Koncept aplikacije</text>
+
+  <!-- ═══════════ SIDEBAR ═══════════ -->
+  <rect x="40" y="55" width="130" height="480" rx="10" fill="#E0E0E0" stroke="#BDBDBD" stroke-width="1.5"/>
+  <text x="105" y="48" text-anchor="middle" font-size="10" fill="#888" font-style="italic">Sidebar (kolapsibilna)</text>
+
+  <!-- Logo area -->
+  <rect x="52" y="67" width="106" height="36" rx="6" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="105" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#555">SMM LOGO</text>
+
+  <!-- Nav items -->
+  <rect x="52" y="115" width="106" height="28" rx="5" fill="#BDBDBD" stroke="#AAA" stroke-width="1"/>
+  <text x="105" y="133" text-anchor="middle" font-size="10" font-weight="600" fill="#333">Dashboard ◀</text>
+
+  <rect x="52" y="151" width="106" height="28" rx="5" fill="none"/>
+  <text x="105" y="169" text-anchor="middle" font-size="10" fill="#777">Feed</text>
+
+  <rect x="52" y="187" width="106" height="28" rx="5" fill="none"/>
+  <text x="105" y="205" text-anchor="middle" font-size="10" fill="#777">Connected</text>
+
+  <rect x="52" y="223" width="106" height="28" rx="5" fill="none"/>
+  <text x="105" y="241" text-anchor="middle" font-size="10" fill="#777">Notifications</text>
+
+  <rect x="52" y="259" width="106" height="28" rx="5" fill="none"/>
+  <text x="105" y="277" text-anchor="middle" font-size="10" fill="#777">Settings</text>
+
+  <!-- divider -->
+  <line x1="60" y1="460" x2="158" y2="460" stroke="#C0C0C0" stroke-width="1"/>
+
+  <!-- Theme toggle -->
+  <rect x="52" y="468" width="48" height="24" rx="12" fill="#C8C8C8" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="76" y="484" text-anchor="middle" font-size="9" fill="#666">☀ ☾</text>
+
+  <!-- User avatar -->
+  <circle cx="75" cy="510" r="16" fill="#C0C0C0" stroke="#BDBDBD" stroke-width="1"/>
+  <text x="75" y="514" text-anchor="middle" font-size="8" fill="#666">USER</text>
+  <rect x="98" y="505" width="52" height="10" rx="3" fill="#C8C8C8"/>
+
+  <!-- ═══════════ MAIN CONTENT ═══════════ -->
+  <rect x="190" y="55" width="630" height="480" rx="10" fill="#EDEDED" stroke="#BDBDBD" stroke-width="1.5"/>
+  <text x="505" y="48" text-anchor="middle" font-size="10" fill="#888" font-style="italic">Glavni sadržaj (menja se po stranici)</text>
+
+  <!-- Header row -->
+  <rect x="206" y="70" width="320" height="34" rx="6" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="366" y="92" text-anchor="middle" font-size="11" font-weight="700" fill="#444">Naslov stranice / Pozdravna poruka</text>
+
+  <rect x="546" y="70" width="258" height="34" rx="6" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="675" y="92" text-anchor="middle" font-size="10" fill="#666">Datum i vreme</text>
+
+  <!-- 2x2 cards grid -->
+  <text x="206" y="128" font-size="10" fill="#888" font-style="italic">2×2 grid — kartice naloga</text>
+  <rect x="206" y="136" width="288" height="60" rx="8" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="232" cy="166" r="16" fill="#C4C4C4" stroke="#BBB" stroke-width="1"/>
+  <text x="232" y="170" text-anchor="middle" font-size="8" fill="#666">IGR</text>
+  <rect x="256" y="157" width="80" height="10" rx="3" fill="#C4C4C4"/>
+  <rect x="256" y="173" width="55" height="8" rx="3" fill="#D4D4D4"/>
+  <rect x="452" y="160" width="30" height="12" rx="6" fill="#C8E6C9"/>
+  <text x="467" y="170" text-anchor="middle" font-size="7" fill="#388E3C">✓</text>
+
+  <rect x="506" y="136" width="288" height="60" rx="8" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="532" cy="166" r="16" fill="#C4C4C4" stroke="#BBB" stroke-width="1"/>
+  <text x="532" y="170" text-anchor="middle" font-size="8" fill="#666">GIT</text>
+  <rect x="556" y="157" width="70" height="10" rx="3" fill="#C4C4C4"/>
+  <rect x="556" y="173" width="50" height="8" rx="3" fill="#D4D4D4"/>
+
+  <rect x="206" y="206" width="288" height="60" rx="8" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="232" cy="236" r="16" fill="#C4C4C4" stroke="#BBB" stroke-width="1"/>
+  <text x="232" y="240" text-anchor="middle" font-size="8" fill="#666">SPT</text>
+  <rect x="256" y="227" width="65" height="10" rx="3" fill="#C4C4C4"/>
+  <rect x="256" y="243" width="45" height="8" rx="3" fill="#D4D4D4"/>
+
+  <rect x="506" y="206" width="288" height="60" rx="8" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="532" cy="236" r="16" fill="#C4C4C4" stroke="#BBB" stroke-width="1"/>
+  <text x="532" y="240" text-anchor="middle" font-size="8" fill="#666">STM</text>
+  <rect x="556" y="227" width="60" height="10" rx="3" fill="#C4C4C4"/>
+  <rect x="556" y="243" width="80" height="8" rx="3" fill="#D4D4D4"/>
+
+  <!-- Stats row -->
+  <text x="206" y="285" font-size="10" fill="#888" font-style="italic">Stats — 3 kartice</text>
+  <rect x="206" y="293" width="185" height="48" rx="8" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="298" y="322" text-anchor="middle" font-size="10" fill="#666">Povezanih mreža</text>
+  <rect x="401" y="293" width="185" height="48" rx="8" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="493" y="322" text-anchor="middle" font-size="10" fill="#666">Notifikacije</text>
+  <rect x="596" y="293" width="198" height="48" rx="8" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <text x="695" y="322" text-anchor="middle" font-size="10" fill="#666">Aktivni nalozi</text>
+
+  <!-- Recent Activity -->
+  <text x="206" y="360" font-size="12" font-weight="700" fill="#555">Recent Activity</text>
+  <rect x="206" y="370" width="588" height="38" rx="6" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="228" cy="389" r="12" fill="#C4C4C4"/>
+  <rect x="250" y="382" width="200" height="10" rx="3" fill="#C4C4C4"/>
+  <rect x="700" y="382" width="76" height="10" rx="3" fill="#C4C4C4"/>
+
+  <rect x="206" y="416" width="588" height="38" rx="6" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="228" cy="435" r="12" fill="#C4C4C4"/>
+  <rect x="250" y="428" width="160" height="10" rx="3" fill="#C4C4C4"/>
+  <rect x="700" y="428" width="76" height="10" rx="3" fill="#C4C4C4"/>
+
+  <rect x="206" y="462" width="588" height="38" rx="6" fill="#DCDCDC" stroke="#C8C8C8" stroke-width="1"/>
+  <circle cx="228" cy="481" r="12" fill="#C4C4C4"/>
+  <rect x="250" y="474" width="180" height="10" rx="3" fill="#C4C4C4"/>
+  <rect x="700" y="474" width="76" height="10" rx="3" fill="#C4C4C4"/>
+
+  <!-- ═══════════ SPOTIFY PLAYER (floating) ═══════════ -->
+  <rect x="530" y="495" width="280" height="30" rx="8" fill="#D4D4D4" stroke="#BDBDBD" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <text x="670" y="514" text-anchor="middle" font-size="10" fill="#666">🎵  SpotifyPlayer (plutajući widget)</text>
+
+  <!-- Floating indicator arrow -->
+  <text x="822" y="480" font-size="18" fill="#BDBDBD">↘</text>
+
+  <!-- ═══════════ ANNOTATIONS ═══════════ -->
+  <!-- Sidebar width note -->
+  <line x1="40" y1="545" x2="170" y2="545" stroke="#999" stroke-width="1" marker-end="url(#arrow)"/>
+  <text x="105" y="558" text-anchor="middle" font-size="9" fill="#888">72px / 240px</text>
+
+  <!-- Main area note -->
+  <line x1="190" y1="545" x2="820" y2="545" stroke="#999" stroke-width="1"/>
+  <text x="505" y="558" text-anchor="middle" font-size="9" fill="#888">Sadržaj stranice — flex: 1, overflow scroll</text>
+
+  <!-- Bottom label -->
+  <text x="450" y="575" text-anchor="middle" font-size="9" fill="#AAA">Slika 4 — Koncept layout aplikacije Social Media Manager</text>
+
+  <!-- border -->
+  <rect x="0.5" y="0.5" width="899" height="579" fill="none" stroke="#D0D0D0" stroke-width="1"/>
+
+</svg>
