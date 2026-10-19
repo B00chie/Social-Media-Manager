@@ -28,7 +28,7 @@ function Dashboard() {
     progressBg: isDark ? '#21213C' : '#CCCCCC',
   }
 
-  const today = new Date(2026, 5, 11).toLocaleDateString('sr-Latn-RS', {
+  const today = new Date().toLocaleDateString('sr-Latn-RS', {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
   })
 
@@ -45,7 +45,7 @@ function Dashboard() {
   ]
 
   const stats = [
-    { label: 'Povezanih mreža', value: 1 },
+    { label: 'Povezanih mreža', value: accounts.filter(a => a.connected).length },
     { label: 'Ukupno postova', value: INSTAGRAM_POST_COUNT },
     { label: 'Aktivni nalozi', value: 1 },
   ]

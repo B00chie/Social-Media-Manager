@@ -136,7 +136,7 @@ function Feed() {
                       <div style={{ width: '34px', height: '34px', borderRadius: '50%', background: 'linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                         <FaInstagram size={18} color="#FFFFFF" />
                       </div>
-                      <span style={{ color: t.textSecondary, fontSize: '14px', fontFamily: 'Inter' }}>@visuals_k</span>
+                      <span style={{ color: t.textSecondary, fontSize: '14px', fontFamily: 'Inter' }}>@demo.account</span>
                     </div>
                     <span style={{ color: t.textSecondary, fontSize: '14px', fontFamily: 'Inter' }}>{formatDate(post.timestamp)}</span>
                   </div>
