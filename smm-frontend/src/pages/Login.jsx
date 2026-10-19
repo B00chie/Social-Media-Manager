@@ -62,7 +62,7 @@ function Login() {
   return (
     <div style={{ display: 'flex', height: '100vh', background: '#0F0F1A' }}>
       <AnimatedBg>
-        <h1 style={{ color: '#fff', fontSize: '36px', fontWeight: '700', textAlign: 'center', letterSpacing: '0.02em', fontFamily: 'Druk Wide Trial' }}>Social Media Manager</h1>
+        <h1 style={{ color: '#fff', fontSize: '36px', fontWeight: '700', textAlign: 'center', letterSpacing: '0.02em', fontFamily: "'Unbounded', 'Inter', sans-serif" }}>Social Media Manager</h1>
         <p style={{ color: '#fff', fontSize: '24px', fontWeight: '500', marginTop: '16px', textAlign: 'center', fontFamily: 'Inter' }}>Jedna mreža za sve</p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '48px' }}>
           {[FaInstagram, FaGithub, FaSpotify, FaSteam].map((Icon, i) => (

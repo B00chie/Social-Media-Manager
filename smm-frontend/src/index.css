@@ -1,19 +1,5 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: 'Druk Wide Trial';
-    src: url('./assets/fonts/DrukWideTrial-Regular.ttf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Druk Wide Trial';
-    src: url('./assets/fonts/DrukWideTrial-Medium.ttf') format('opentype');
-}
-
-@font-face {
-    font-family: 'Druk Wide Trial';
-    src: url('./assets/fonts/DrukWideTrial-Bold.ttf') format('opentype');
-}
 @keyframes gradientShift {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
@@ -97,6 +83,7 @@
   body {
     overflow-x: hidden;
     margin: 0;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
   }
   .btn-primary {
     transition: filter 0.2s ease, transform 0.1s ease;
