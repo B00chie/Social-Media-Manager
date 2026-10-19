@@ -16,18 +16,31 @@ function Login() {
     if (!password) newErrors.password = 'Ovo polje je prazno'
     if (Object.keys(newErrors).length > 0) { setErrors(newErrors); return }
     setErrors({})
-    const res = await fetch('http://localhost:8080/api/auth/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ username, password })
-    })
-    const data = await res.json()
-    if (data.token) {
-      localStorage.setItem('token', data.token)
-      navigate('/dashboard')
-    } else {
-      setErrors({ password: 'Pogrešno korisničko ime ili lozinka' })
+    try {
+      const res = await fetch('http://localhost:8080/api/auth/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username, password })
+      })
+      const data = await res.json()
+      if (data.token) {
+        localStorage.setItem('token', data.token)
+        navigate('/dashboard')
+      } else {
+        setErrors({ password: 'Pogrešno korisničko ime ili lozinka' })
+      }
+    } catch {
+      setErrors({ password: 'Server nije dostupan. Pogledaj demo ispod.' })
     }
+  }
+
+  // Demo mode: lets the UI run without the Spring Boot backend (e.g. on a static host).
+  // The token is a local, unsigned placeholder. It is never sent anywhere.
+  const handleDemo = () => {
+    const encode = (obj) => btoa(JSON.stringify(obj))
+    const token = `${encode({ alg: 'none' })}.${encode({ sub: 'Demo', iat: Math.floor(Date.now() / 1000) })}.demo`
+    localStorage.setItem('token', token)
+    navigate('/dashboard')
   }
 
   const inputStyle = (field) => ({
@@ -124,6 +137,10 @@ function Login() {
 
           <button className='btn-primary' onClick={handleLogin} style={{ width: '100%', padding: '16px 35px', background: '#6C63FF', color: '#fff', border: 'none', borderRadius: '8px', fontSize: '16px', fontWeight: '500', fontFamily: 'Inter', cursor: 'pointer', marginBottom: '16px' }}>
             Uloguj se
+          </button>
+
+          <button onClick={handleDemo} style={{ width: '100%', padding: '16px 35px', background: 'transparent', color: '#fff', border: '1px solid #6C63FF', borderRadius: '8px', fontSize: '16px', fontWeight: '500', fontFamily: 'Inter', cursor: 'pointer', marginBottom: '16px' }}>
+            Pogledaj demo (bez servera)
           </button>
 
           <p style={{ textAlign: 'center' }}>

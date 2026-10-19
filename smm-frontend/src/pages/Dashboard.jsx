@@ -16,18 +16,7 @@ function Dashboard() {
   const isDark = theme === 'dark'
   const username = getUsername()
 
-  const [igProfile, setIgProfile] = useState(null)
-  const [igMedia, setIgMedia] = useState([])
-
-  useEffect(() => {
-    fetch('http://localhost:8080/api/instagram/profile')
-      .then(r => r.json())
-      .then(data => setIgProfile(data))
-
-    fetch('http://localhost:8080/api/instagram/media')
-      .then(r => r.json())
-      .then(data => setIgMedia(data.data || []))
-  }, [])
+  const INSTAGRAM_POST_COUNT = 2
 
   const t = {
     bg: isDark ? '#0F0F1A' : '#E8E8E8',
@@ -39,7 +28,7 @@ function Dashboard() {
     progressBg: isDark ? '#21213C' : '#CCCCCC',
   }
 
-  const today = new Date().toLocaleDateString('sr-Latn-RS', {
+  const today = new Date(2026, 5, 11).toLocaleDateString('sr-Latn-RS', {
     weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
   })
 
@@ -47,8 +36,8 @@ function Dashboard() {
     {
       name: 'Instagram',
       icon: FaInstagram,
-      info: igProfile ? `${igProfile.media_count} posts` : 'Učitavanje...',
-      connected: !!igProfile
+      info: `${INSTAGRAM_POST_COUNT} posts`,
+      connected: true
     },
     { name: 'GitHub', icon: FaGithub, info: '47 repos', connected: true },
     { name: 'Spotify', icon: FaSpotify, info: 'Connected', connected: true },
@@ -56,9 +45,9 @@ function Dashboard() {
   ]
 
   const stats = [
-    { label: 'Povezanih mreža', value: igProfile ? 1 : 0 },
-    { label: 'Ukupno postova', value: igProfile?.media_count || 0 },
-    { label: 'Aktivni nalozi', value: igProfile ? 1 : 0 },
+    { label: 'Povezanih mreža', value: 1 },
+    { label: 'Ukupno postova', value: INSTAGRAM_POST_COUNT },
+    { label: 'Aktivni nalozi', value: 1 },
   ]
 
   return (

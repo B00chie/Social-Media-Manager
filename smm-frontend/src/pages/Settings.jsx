@@ -121,7 +121,7 @@ function Settings() {
   const [networkToggles, setNetworkToggles] = useState({ instagram: false, spotify: false, github: false })
   const [checkboxes, setCheckboxes] = useState({ followers: false, likes: false, comments: false, push: false })
   const [username, setUsername] = useState('')
-  const [currentEmail] = useState('kouhkey@kvisuals.rs')
+  const [currentEmail] = useState('demo@example.com')
   const [newEmail, setNewEmail] = useState('')
   const [oldPassword, setOldPassword] = useState('')
   const [newPassword, setNewPassword] = useState('')
