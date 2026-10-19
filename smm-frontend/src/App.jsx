@@ -1,5 +1,5 @@
 import React, { useState, createContext } from 'react'
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import Dashboard from './pages/Dashboard'
@@ -16,6 +16,13 @@ function ProtectedRoute({ children }) {
   const token = localStorage.getItem('token')
   if (!token) return <Navigate to="/login" />
   return children
+}
+
+// The floating player would cover the login/register buttons, so hide it on auth screens.
+function PlayerGate() {
+  const { pathname } = useLocation()
+  if (['/', '/login', '/register'].includes(pathname)) return null
+  return <SpotifyPlayer />
 }
 
 function App() {
@@ -35,7 +42,7 @@ function App() {
           <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
           <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
         </Routes>
-        <SpotifyPlayer />
+        <PlayerGate />
       </BrowserRouter>
     </ThemeContext.Provider>
   )
